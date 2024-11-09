@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Angry Birds Halloween</title>
+  <script src="ruffle.js"></script> <!-- Ruta de Ruffle -->
+</head>
+<body>
+  <h1>Angry Birds Halloween</h1>
+  <div id="flash-game-container" style="width: 1000px; height: 1000px;"></div>
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+    document.getElementById("flash-game-container").appendChild(player);
+    player.load("angry_birds_halloween_hd_by_venuskawaiigames-d9q2co6.swf"); // Ruta del archivo SWF
+  </script>
+</body>
+</html>
